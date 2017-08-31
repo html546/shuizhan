@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi"> 
+	<title>水站商城</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jishuqi.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- banner图 -->
+	<div class="banner">
+		<!-- <img src="images/1-1banner.png" alt="banner图"> -->
+		<div class="swiper-container">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">
+					<img src="images/1-1banner.png" alt="banner图">
+				</div>
+			</div>
+			<div class="swiper-pagination"></div>
+		</div>
+		<!-- 通知 -->
+		<div class="message">
+			<img src="images/1-1通知.png" alt="通知">
+			<p>通知标题通知标题通知标题通知标题通知标题...</p>
+			<img src="images/1-5展开.png" alt="展开">
+		</div>
+		<!-- 四个图标 -->
+		<div class="tubiao">
+			<div class="img_group2">
+				<a href="Seckill.html">
+					<img src="images/1-1秒杀.png" alt="">
+					<p>秒杀</p>
+				</a>
+			</div>
+			<div class="img_group2">
+				<a href="flashScale.html">
+					<img src="images/1-1抢购.png" alt="">
+					<p>抢购</p>
+				</a>
+			</div>
+			<div class="img_group2">
+				<a href="waterTicket.html">
+					<img src="images/1-1水票.png" alt="">
+					<p>买水票</p>
+				</a>
+			</div>
+			<div class="img_group2">
+				<a href="">
+					<img src="images/1-1活动.png" alt="">
+					<p>活动</p>
+				</a>
+			</div>
+		</div>
+		<div class="products">
+			<div class="product_1" onclick="javascript:window.location.href='detail.html'">
+				<div class="img_left">
+					<img src="images/1-1图图1.png" alt="">
+				</div>
+				<div class="productContent">
+					<h4>农夫山泉系列10L</h4>
+					<p><span>￥17.00</span>元/桶</p>
+				</div>
+				<div class="jishuqi">
+					<button>-</button>
+					<input type="number" value="2">
+					<button>+</button>
+				</div>
+			</div>
+			<div class="product_1" onclick="javascript:window.location.href='detail.html'">
+				<div class="img_left">
+					<img src="images/1-1图图2.png" alt="">
+				</div>
+				<div class="productContent">
+					<h4>哇哈哈系列10L</h4>
+					<p><span>￥15.00</span>元/桶</p>
+				</div>
+				<div class="jishuqi">
+					<button>-</button>
+					<input type="number" value="2">
+					<button>+</button>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.jishuqi').jishuqi();
+			$('.jishuqi').click(function(event) {
+				event.stopPropagation();
+			});
+		})
+	</script>
+	<!-- 底部 -->
+	<div class="bottom">
+		<div class="img_group">
+			<img src="images/主页.png" alt="主页图标">
+			<p>主页</p>
+		</div>
+		<div class="img_group">
+			<img src="images/客服电话灰.png" alt="客服电话">
+			<p>客服电话</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='list.html'">
+			<img src="images/分类灰.png" alt="分类">
+			<p>分类</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='shopping(empty).html'">
+			<img src="images/购物车灰.png" alt="购物车">
+			<span>2</span>
+			<p>购物车</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='person.html'">
+			<img src="images/个人中心灰.png" alt="个人中心">
+			<p>个人中心</p>
+		</div>
+	</div>
+	<script>
+		$(document).ready(function(){
+			var mySwiper = new Swiper('.swiper-container',{
+				direction:'horizontal',
+				loop:true,
+				pagination:'.swiper-pagination'
+			})
+		})
+	</script>
+</body>
+</html>

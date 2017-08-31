@@ -1,0 +1,121 @@
+/*销量*/
+.sales{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 14px;
+}
+.Sales{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	margin-top: 30px;
+}
+.Sales .Sales_line1{
+	width: 100%;
+	height: 50px;
+}
+.Sales .Sales_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.Sales .Sales_line1 p:first-child{
+	float: left;
+	margin-left: 10px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	font-size: 14px;
+	color: #666;
+}
+.Sales .Sales_line1 p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	font-size: 14px;
+	color: #666;
+}
+.Sales .Sales_line1 p:first-child span,.Sales .Sales_line1 p:nth-child(2) span{
+	color:#333;
+	font-size: 16px;
+}
+.Sales .Sales_line1 img{
+	float: right;
+	margin-right: 10px;
+	width: 28px;
+    height: 28px;
+    margin-top: 11px;
+}
+/*库存*/
+.inventory{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 14px;
+	clear: left;
+}
+.Inventory{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	margin-top: 30px;
+}
+.Inventory .Invenroty_line1,.Customer .Customer_line1{
+	width: 100%;
+	height: 50px;
+}
+.Inventory .Invenroty_line1:not(:last-child),.Customer .Customer_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.Inventory .Invenroty_line1 p,.Delivery .Delivery_line1 p,.Customer .Customer_line1 p{
+	float: left;
+	margin-left: 10px;
+	line-height: 50px;
+	letter-spacing: 1px;
+	font-size: 16px;
+	color: #333;
+	clear: both;
+}
+.Inventory .Invenroty_line1 p span,.Delivery .Delivery_line1 p span,.Customer .Customer_line1 p span{
+	color: #fd7575;
+	font-size: 14px;
+}
+.Inventory .Invenroty_line1 img,.Delivery .Delivery_line1 img{
+	float: right;
+	margin-right: 10px;
+	width: 28px;
+    height: 28px;
+    margin-top: 11px;
+}
+/*配送*/
+.delivery{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 14px;
+	clear: left;
+}
+.Delivery{
+	width: 100%;
+	height: 50px;
+	background: #fff;
+	margin-top: 30px;
+}
+/*客户*/
+.customer{
+	line-height: 30px;
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 14px;
+	clear: left;
+}
+.Customer{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	margin-top: 30px;
+	margin-bottom: 20px;
+}

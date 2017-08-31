@@ -1,0 +1,149 @@
+/*账户*/
+.title{
+	width: 100%;
+	height: 40px;
+	background: #fff;
+	border-bottom: 1px solid #eee;
+}
+.title img{
+	margin-top: 10px;
+    margin-left: 8px;
+    float: left;
+    width: 20px;
+    height: 20px;
+}
+.title .titleGroup{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	height: 40px;
+	line-height: 40px;
+}
+.title .titleGroup p{
+	padding: 0px 20px;
+}
+.title .titleGroup p.active{
+	color: #5ac1e2;
+	border-bottom: 2px solid #5ac1e2; 
+}
+/*账户详情*/
+.xiangqing,.xiangqing2{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.xiangqing3{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.xiangqing2,.xiangqing3{
+	display: none;
+}
+.xiangqing .xiangqing_line1,.xiangqing2 .xiangqing_line1,.xiangqing3 .xiangqing_line1{
+	width: 100%;
+	height: 80px;
+}
+.xiangqing .xiangqing_line1:not(:last-child),.xiangqing2 .xiangqing_line1:not(:last-child),.xiangqing3 .xiangqing_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.xiangqing .xiangqing_line1 p:first-of-type,.xiangqing2 .xiangqing_line1 p:first-of-type,.xiangqing3 .xiangqing_line1 p:first-of-type{
+	float: left;
+	margin-left: 10px;
+	margin-top: 17px;
+	font-size: 14px;
+	color: #666;
+}
+.xiangqing .xiangqing_line1 p:nth-of-type(2),.xiangqing2 .xiangqing_line1 p:nth-of-type(2),.xiangqing3 .xiangqing_line1 p:nth-of-type(2){
+	float: right;
+	margin-top: 16px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #ff7676;
+}
+.xiangqing .xiangqing_line1 p:nth-of-type(2).zongjia{
+	color: #666;
+}
+.xiangqing .xiangqing_line1 p:nth-of-type(2)>span{
+	color: #fe7774;
+}
+.xiangqing .xiangqing_line1 p:nth-of-type(3),.xiangqing2 .xiangqing_line1 p:nth-of-type(3),.xiangqing3 .xiangqing_line1 p:nth-of-type(3){
+	float: left;
+	margin-left: 10px;
+	margin-top:20px;
+	clear: both;
+	color: #999999;
+	font-size: 12px;
+}
+.xiangqing .xiangqing_line1 p:nth-of-type(4){
+	float: right;
+	margin-right: 10px;
+	margin-top: 20px;
+	font-size: 14px;
+}
+.xiangqing .xiangqing_line1 button:nth-child(4),.xiangqing2 .xiangqing_line1 button:nth-child(4),.xiangqing3 .xiangqing_line1 button:nth-child(4){
+	float: right;
+	margin-right: 10px;
+	margin-top: 12px;
+	width: 50px;
+	height: 25px;
+	background: #59c2e0;
+	color: #fff;
+	border: none;
+	border-radius: 2px;
+}
+.xiangqing3 .xiangqing_line1 button:nth-child(4){
+	background: #fea56d;
+}
+.xiangqing3 .xiangqing_line1 button.sigin{
+	background:#59c2e0;
+}
+.xiangqing2 .xiangqing_line1 button:nth-child(4){
+	background: #fea56d;
+}
+/*模态*/
+.mutai{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 10;
+	display: none;
+}
+.mutai div{
+	width: 75%;
+	height:160px;
+	background: #fff;
+	position: absolute;
+	left: 12.5%;
+	margin-top: calc(100% - 160px);
+	border-radius: 5px;
+}
+.mutai div h4{
+	text-align: center;
+	line-height: 40px;
+	border-bottom: 1px solid #eee;
+}
+.mutai div p{
+	text-align: center;
+	line-height: 65px;
+}
+.mutai div button{
+	border: none;
+	border-radius: 5px;
+	float: left;
+	margin-left: calc((100% - 220px)/4);
+	color: #fff;
+}
+.mutai div button:first-of-type{
+	width: 110px;
+	height: 40px;
+	background: #169BD5;
+}
+.mutai div button:nth-of-type(2){
+	width: 110px;
+	height: 40px;
+	background: #AEAEAE;
+}

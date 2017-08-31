@@ -1,0 +1,111 @@
+/*配送明细*/
+.dispatchingTitle{
+	float: left;
+	line-height: 30px;
+	margin-left: 16px;
+	color: #676767;
+	font-size: 14px;
+}
+.dispatching{
+	width: 100%;
+	height: 315px;
+	background: #fff;
+	margin-top: 30px;
+}
+.dispatching2{
+	margin-top: 10px;
+}
+.dispatching .dispatching_line1{
+	width: 100%;
+	height: 40px;
+	border-bottom: 1px solid #eee;
+}
+.dispatching .dispatching_line1 p:first-child{
+	float: left;
+	margin-left: 10px;
+	line-height: 40px;
+	font-size: 14px;
+	color: #666;
+}
+.dispatching .dispatching_line1 p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+	line-height: 40px;
+	color: #999;
+	font-size: 14px;
+}
+.dispatching .dispatching_line1 p:nth-child(2) span{
+	color: #fd7575;
+}
+.dispatching .dispatching_line2{
+	width: 100%;
+	height: 95px;
+	border-bottom: 1px solid #eee;
+}
+.dispatching .dispatching_line2 p:first-of-type{
+	float: left;
+	margin-left: 10px;
+	color: #999;
+	font-size: 13px;
+	margin-top: 10px;
+}
+.dispatching .dispatching_line2 p:nth-of-type(2){
+	float: left;
+	margin-top: 13px;
+	margin-left: 10px;
+	clear: left;
+}
+.dispatching .dispatching_line2 p:nth-of-type(3){
+	float: left;
+	margin-top: 8px;
+	margin-left: 10px;
+	clear: left;
+	font-size: 14px;
+	color: #666;
+}
+.dispatching .dispatching_line2 p:nth-of-type(3) span{
+	color: #fd7776;
+}
+.dispatching .dispatching_line2 p:nth-of-type(4){
+	float: right;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #656565;
+	margin-top: 8px;
+}
+.dispatching .dispatching_line2 p:nth-of-type(4) span{
+	color: #fe7676;
+}
+.dispatching .dispatching_line3{
+	width: 100%;
+	height: 70px;	
+}
+.dispatching .dispatching_line3:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.dispatching .dispatching_line3 p:first-child{
+	float: left;
+	margin-left: 10px;
+	margin-top: 13px;
+}
+.dispatching .dispatching_line3 p:nth-child(2){
+	float: left;
+	margin-top: 8px;
+	margin-left: 10px;
+	clear: left;
+	font-size: 14px;
+	color: #666;
+}
+.dispatching .dispatching_line3 p:nth-child(2) span{
+	color: #fe7676;
+}
+.dispatching .dispatching_line3 p:nth-child(3){
+	float: right;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #656565;
+	margin-top: 8px;
+}
+.dispatching .dispatching_line3 p:nth-child(3) span{
+	color: #fe7676;
+}

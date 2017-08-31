@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<title>购物车(有商品)</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="minimal/red.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.icheck.js"></script>
+	<script src="js/jishuqi.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 购物车title -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>购物车(2)</span>
+		<!-- 购物车内容 -->
+		<!-- <form action=""> -->
+			<div class="products3">
+				<input type="checkbox" checked="">
+				<img src="images/1-1图图1.png" alt="">
+				<div class="products3_title">
+					<h4>农夫山泉系列10L</h4>
+					<p><span>￥17.00</span>元/桶</p>
+				</div>
+				<div class="jishuqi">
+					<button>-</button>
+					<input type="number" value="1">
+					<button>+</button>
+				</div>
+			</div>
+			<div class="products3">
+				<input type="checkbox">
+				<img src="images/1-1图图2.png" alt="">
+				<div class="products3_title">
+					<h4>哇哈哈系列10L</h4>
+					<p><span>￥15.00</span>元/桶</p>
+				</div>
+				<div class="jishuqi">
+					<button>-</button>
+					<input type="number" value="1">
+					<button>+</button>
+				</div>
+			</div>
+			<!-- 压桶 -->
+			<div class="yatong">
+				<div class="yatong_line1">
+					<span>压桶方式</span>
+					<button class="check">压桶</button>
+					<button>自有桶</button>
+				</div>
+				<div class="yatong_line1">
+					<label for="shuliang">压桶数量</label>
+					<select name="" id="shuliang">
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+					</select>
+				</div>
+				<div class="yatong_line1">
+					<span>押金</span>
+					<p><span>￥50</span>元</p>
+				</div>
+				<div class="yatong_line1">
+					<span>支付方式</span>
+					<button class="check">金币</button>
+					<button>水票</button>
+				</div>
+			</div>
+		<!-- </form> -->
+	</div>
+	<!-- 底部 -->
+	<div class="bottom2">
+		<input type="checkbox" id="quanxuan">
+		<label for="quanxuan">全选</label>
+		<p>需支付:<span>￥17</span>个金币</p>
+		<span onclick="javascript:window.location.href='unpaid.html'">确定下单</span>
+	</div>
+	<script>
+		$(document).ready(function(){
+			$('input').iCheck({
+				checkboxClass:'icheckbox_minimal-red',
+				increaseArea:'20%'
+			})
+			$('.jishuqi').jishuqi();
+			$('.yatong .yatong_line1').find('button').click(function(event) {
+				$(this).addClass('check').siblings('button').removeClass('check');
+			});
+			$('#quanxuan').click(function(event) {
+				if($(this).parent('.icheckbox_minimal-red').hasClass('checked')){
+					$('input[type="checkbox"]').parent('.icheckbox_minimal-red').removeClass('checked');
+				}else{
+					$('input[type="checkbox"]').parent('.icheckbox_minimal-red').addClass('checked')
+				}
+			});
+		})
+	</script>
+</body>
+</html>

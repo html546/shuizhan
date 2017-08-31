@@ -1,0 +1,81 @@
+.title>button.xuzhi{
+	width: 70px;
+	height: 30px;
+	background: #53b8d6;
+	float: right;
+	position: static;
+	border-radius: 0;
+	margin-top: -35px;
+	margin-right: 10px;
+	border: none;
+}
+.title>button.xuzhi a{
+	font-size: 14px;
+	line-height: 30px;
+	color: #fff;
+}
+.products5{
+	width: 100%;
+	height: 400px;
+	background: #fff;
+}
+.products5 .products5_line1{
+	width: 100%;
+	height: 100px;
+}
+.products5 .products5_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.products5 .products5_line1 img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+	border: 1px solid #eee;
+}
+.products5 .products5_line1 h4{
+	float: left;
+	font-size: 17px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	margin-left: 10px;
+	margin-top: 17px;
+}
+.products5 .products5_line1 p:first-of-type{
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.products5 .products5_line1 p:first-of-type del{
+	font-size: 10px;
+	color: #999;
+}
+.products5 .products5_line1 p:first-of-type span{
+	font-size: 14px;
+	color: #fb6b6a;
+	letter-spacing: 1px;
+}
+.products5 .products5_line1 p:nth-of-type(2){
+	float: left;
+	margin-top: -15px;
+	clear: left;
+	margin-left: 103px;
+	font-size: 10px;
+	color: #9a9a9a;
+}
+.products5 .products5_line1 button{
+	float: right;
+	width: 50px;
+	height: 25px;
+	background: #fe7676;
+	color: #fff;
+	margin-right: 10px;
+	margin-top: -28px;
+	border-radius: 3px;
+	border: none;
+}
+.products5 .products5_line1 br+p{
+	margin-left: -35px!important;
+    margin-top: 30px!important;
+}

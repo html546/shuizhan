@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi"> 
+	<title>详情</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/detail.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jishuqi.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- banner图 -->
+	<div class="banner">
+		<img src="images/1-2图片1.png" alt="">
+		<a href="javascript:history.back(-1);">
+			<img class="fanhui" src="images/1-2返回.png" alt="">
+		</a>
+		<div class="products2">
+			<div class="productsContent">
+				<h4>农夫山泉10L</h4>
+				<p><span>￥17.00</span>元/桶</p>
+				<span>已售52桶</span>
+			</div>
+			<div class="jishuqi">
+				<button>-</button>
+				<input type="number" value="2">
+				<button>+</button>
+			</div>
+		</div>
+		<div class="jieshao">
+			<p>商品介绍</p>
+		</div>
+		<img style="margin-bottom: 50px;" src="images/1-2图片2.png" alt="">
+	</div>
+	<script>
+		$(function(){
+			$('.jishuqi').jishuqi();
+		})
+	</script>
+	<!-- 底部 -->
+	<div class="bottom2">
+		<div class="bottom2_left"><a href="shopping.html">加入购物车</a></div>
+		<div class="bottom2_right"><a href="unpaid.html">立即下单</a></div>
+		<a href=""><img src="images/1-2购物车.png" alt=""></a>
+	</div>
+</body>
+</html>

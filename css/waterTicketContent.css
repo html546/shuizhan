@@ -1,0 +1,134 @@
+/*买水票图文详情*/
+.imgContent{
+	width: 100%;
+	height: 315px;
+	background: #fff;
+}
+.imgContent a img{
+	margin-left: 15px;
+	margin-top: 10px;
+	float: left;
+	width: 30px;
+	height: 35px;
+}
+.imgContent img{
+	width: 54%;
+	height: 235px;
+	margin-left: 23%;
+}
+.imgContent p:first-of-type{
+	float: left;
+	margin-left: 11px;
+	margin-top: 21px;
+}
+.imgContent del{
+	float: right;
+	margin-top: 21px;
+	margin-right: 16px;
+	color: #666;
+	font-size: 14px;
+}
+.imgContent p:nth-of-type(2){
+	float: left;
+	clear: both;
+	margin-left: 11px;
+	margin-top: 11px;
+}
+.imgContent p:nth-of-type(3){
+	float: right;
+	margin-right: 11px;
+	margin-top: 11px;
+	color: #fd7673;
+}
+.xiangqing{
+	font-size: 14px;
+	line-height: 30px;
+	color: #9a9a9a;
+	margin-left: 10px;
+}
+.xiangqing+img{
+	width: 100%;
+	height: auto;
+	margin-bottom: 50px;
+}
+/*底部*/
+.bottom2{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	width: 100%;
+	height: 50px;
+	background-color: #fff;
+}
+.bottom2 p{
+	float: right;
+	line-height: 50px;
+	margin-right: 10px;
+	font-size: 12px;
+}
+.bottom2 p span{
+	font-size: 14px;
+	color: #fd7776;
+}
+.bottom2>span{
+	width: 150px;
+	height: 50px;
+	float: right;
+	background-color: #fe7676;
+	color: #fff;
+	text-align: center;
+	line-height:50px;
+
+}
+/*支付模态框*/
+.zhifu{
+	width: 100%;
+	height: 100%;
+	background:rgba(0,0,0,0.3);
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	display: none;
+}
+.zhifu .caidan{
+	width: 100%;
+	height: 140px;
+	background:#fff;
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+}
+.zhifu .caidan .caidan1{
+	width: 100%;
+	height: 45px;
+	border-bottom: 1px solid #eee;
+}
+.zhifu .caidan .caidan1 p:first-child{
+	float: left;
+	margin-left: 10px;
+	line-height: 45px;
+}
+.zhifu .caidan .caidan1 p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+	line-height: 45px;
+}
+.zhifu .caidan .caidan1 p:nth-child(2) img{
+	display: inline-block;
+	width: 20px;
+	height: 17px;
+	margin-right: 8px;
+}
+.zhifu .caidan .caidan1 p:nth-child(2) span{
+	color: #fd6b6b;
+}
+.zhifu .caidan button{
+	width: 100%;
+	height: 50px;
+	background: #13a342;
+	border: none;
+	color: #fff;
+	text-align: center;
+	line-height: 50px;
+}

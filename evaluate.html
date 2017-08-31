@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>评价</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="css/evaluate.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/jquery.raty.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 评价详情title -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>评价</span>
+	</div>
+	<!-- 评价详情1 -->
+	<div class="xiangqing1">
+		<div class="xiangqing1_line1">
+			<p>订单号: 20170711101552</p>
+		</div>
+		<div class="xiangqing1_line2">
+			<p>综合评分</p>
+			<div id="star"></div>
+			<p class="fenshu">5分</p>
+		</div>
+		<div class="xiangqing1_line2">
+			<p>配送服务</p>
+			<div id="star2"></div>
+			<p class="fenshu2">4分</p>
+		</div>
+	</div>
+	<!-- 商品评分 -->
+	<div class="shangpin">
+		<div class="shangpinTitle">
+			<p>商品</p>
+		</div>
+		<div class="shangpin_line1">
+			<img src="images/1-1图图1.png" alt="">
+			<p>农夫山泉系列10L</p>
+			<div id="star3"></div>
+			<p class="fenshu3">5分</p>
+		</div>
+		<div class="shangpin_line1">
+			<img src="images/1-1图图2.png" alt="">
+			<p>哇哈哈系列10L</p>
+			<div id="star4"></div>
+			<p class="fenshu4">5分</p>
+		</div>
+	</div>
+	<!-- 简短评价 -->
+	<div class="pingjia">
+		<textarea name="" id="" style="resize: none;" placeholder="请输入简短评价"></textarea>
+		<button>提交</button>
+	</div>
+	<script>
+		$(function(){
+			$('#star').raty({
+				number:5,
+				score:5,
+				targetType:'number',
+				size:24,
+				starOn:'images/3-9红色.png',
+				starOff:'images/3-9灰色.png',
+				click:function(score){
+					$('.fenshu').html(score+'分');
+				}
+			})
+			$('#star2').raty({
+				number:5,
+				score:4,
+				targetType:'number',
+				size:24,
+				starOn:'images/3-9红色.png',
+				starOff:'images/3-9灰色.png',
+				click:function(score){
+					$('.fenshu2').html(score+'分');
+				}
+			})
+			$('#star3').raty({
+				number:5,
+				score:5,
+				targetType:'number',
+				size:24,
+				starOn:'images/3-9红色.png',
+				starOff:'images/3-9灰色.png',
+				click:function(score){
+					$('.fenshu3').html(score+'分');
+				}
+			})
+			$('#star4').raty({
+				number:5,
+				score:5,
+				targetType:'number',
+				size:24,
+				starOn:'images/3-9红色.png',
+				starOff:'images/3-9灰色.png',
+				click:function(score){
+					$('.fenshu4').html(score+'分');
+				}
+			})
+		})
+	</script>
+</body>
+</html>

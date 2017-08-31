@@ -1,0 +1,144 @@
+/*头像账号*/
+.person{
+	width: 100%;
+	height: 110px;
+	background: url(../images/1-1banner.png)  no-repeat;
+	background-size: 100% 110px;
+}
+ .person .personContent{
+	width: 100%;
+	height: 100%;
+	/*background-color: #52c4e8;
+	opacity: .7;*/
+	background:rgba(82,196,232,.7);
+	overflow: hidden;
+} 
+.person .personContent>img{
+	width: 80px;
+	height: 80px;
+	margin-top: 15px;
+	margin-left: 15px;
+	float: left;
+}
+.person .personContent p{
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	color: #fff;
+}
+.person .personContent a img{
+	float: right;
+	width: 25px;
+	height: 25px;
+	margin-right: 10px;
+	margin-top: 40px;
+}
+/*我的订单*/
+.dingdan{
+	width: 100%;
+	height: 130px;
+	background: #fff;
+}
+.dingdan .dingdan_title{
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #eee;
+}
+.dingdan .dingdan_title img:first-child{
+	width: 20px;
+	height: 20px;
+	margin-top: 13px;
+	float: left;
+	margin-left: 10px;
+}
+.dingdan .dingdan_title p{
+	float: left;
+	margin-left: 10px;
+	margin-top: 13px;
+}
+.dingdan .dingdan_title img:nth-child(3){
+	float: right;
+	height: 29px;
+	width: 29px;
+	margin-top: 13px;
+}
+.dingdanIcon{
+	width: 100%;
+}
+.dingdanIcon .iconGroup{
+	float: left;
+	width: calc(100%/3);
+	position: relative;
+}
+.dingdanIcon .iconGroup img{
+	width: 40px;
+	height: 40px;
+	margin-top: 10px;
+	position: absolute;
+	left: 50%;
+	margin-left: -20px;
+}
+.dingdanIcon .iconGroup p{
+	text-align: center;
+	font-size: 13px;
+	margin-top: 50px;
+	clear: both;
+}
+/*订单明细*/
+.mingxi{
+	width: 100%;
+	height: 150px;
+	background: #fff;
+	margin-top: 10px;
+}
+.mingxi_line1{
+	width: 100%;
+	height: 50px;
+}
+.mingxi_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.mingxi_line1 img:first-of-type{
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.mingxi_line1 p:first-of-type{
+	float: left;
+	line-height: 50px;
+	margin-left: 12px;
+}
+.mingxi_line1 button{
+	float: right;
+	width: 56px;
+	height: 26px;
+	border: 2px solid #fea56b;
+	color: #fca66d;
+	margin-top: 10px;
+	margin-right: 10px;
+	border-radius: 15px;
+}
+.mingxi_line1 p:nth-of-type(2){
+	float: right;
+	margin-right: 12px;
+	line-height: 50px;
+	color: #ff7771;
+}
+.mingxi_line1 img:nth-of-type(2){
+	float: right;
+	height: 29px;
+    width: 29px;
+    margin-top: 13px;
+}
+/*管理*/
+.guanli{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	margin-top: 10px;
+}
+.guanli .mingxi_line1:last-child{
+	margin-bottom: 60px;
+}

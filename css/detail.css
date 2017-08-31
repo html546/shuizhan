@@ -1,0 +1,92 @@
+/*详情页样式*/
+.products2{
+	width: 100%;
+	height: 78px;
+	background: #fff;
+	position: relative;
+}
+.products2 .productsContent{
+	position: absolute;
+	left: 0px;
+	top: 0px;
+}
+.products2 .productsContent h4{
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding-left: 10px;
+	padding-top: 17px;
+}
+.products2 .productsContent p{
+	font-size: 12px;
+	color: #8d8d8d;
+	padding-top: 10px;
+	padding-left: 10px;
+	display: inline-block;
+}
+.products2 .productsContent p span{
+	color: #ff7775;
+}
+.products2 .productsContent span:nth-child(3){
+	padding-left: 85px;
+	color: #989898;
+	font-size: 12px;
+}
+.products2 .jishuqi{
+	position: absolute;
+	right: 10px;
+	top: 15px;
+}
+.products2 .jishuqi button{
+	width: 24px;
+	height: 19px;
+	background: #f2f2f2;
+	border: 1px solid #ccc;
+	line-height: 19px;
+	color: #aaa;
+}
+.products2 .jishuqi input{
+	width: 35px;
+	text-align: center;
+	color: #fe7676;
+	border: none;
+}
+.jieshao{
+	height: 30px;
+}
+.jieshao p{
+	font-size: 12px;
+	color: #999;
+	line-height: 30px;
+	margin-left: 11px;
+}
+/*底部*/
+.bottom2{
+	position: fixed;
+	bottom: 0px;
+	height: 50px;
+	border-top: 1px solid #ccc;
+	background: #fff;
+	width: 100%;
+}
+.bottom2 .bottom2_left,.bottom2 .bottom2_right{
+	width: 50%;
+	height: 50px;
+	float: left;
+	text-align: center;
+	line-height: 50px;
+}
+.bottom2 .bottom2_right{
+	border-left: 1px solid #ccc;
+	width: calc(50% - 1px);
+}
+.bottom2 .bottom2_right a{
+	color: #fe7676;
+}
+.bottom2 a img{
+	position: absolute;
+    width: 40px;
+    height: 40px;
+    top: -20px;
+    left: 50%;
+    margin-left: -20px;
+}

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<title>买水票详情</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/waterTicketContent.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 买水票图片详情 -->
+	<div class="imgContent">
+		<a href="javascript:history.back(-1);">
+			<img src="images/3-6返回.png" alt="">
+		</a>
+		<img src="images/3-19图片1.png" alt="">
+		<hr style="background-color: #eee;height: 1px;border: none;">
+		<p>农夫山泉 (天然水)</p><del>原价:28.00元/桶</del>
+		<p>新上市！水票买10赠2</p><p>￥280.00元</p>
+	</div>
+	<!-- 商品详情 -->
+	<p class="xiangqing">商品详情</p>
+	<img src="images/1-2图片2.png" alt="">
+	<!-- 底部 -->
+	<div class="bottom2">
+		<!-- <input type="checkbox" id="quanxuan">
+		<label for="quanxuan">全选</label> -->
+		<span onclick="jiesuan()">去结算</span>
+		<p>合计: <span>￥280.00</span></p>
+	</div>
+	<!-- 支付模态框 -->
+	<div class="zhifu">
+		<div class="caidan">
+			<div class="caidan1">
+				<p>请支付</p>
+				<p>实付款<span>￥280.00元</span></p>
+			</div>
+			<div class="caidan1">
+				<p>支付方式</p>
+				<p><img src="images/2-5微信支付.png" alt="">微信安全支付</p>
+			</div>
+			<button onclick="javascript:window.location.href='zhifu.html'">确认支付</button>
+		</div>
+	</div>
+	<script>
+			function jiesuan(){
+				$('.zhifu').show();
+			}
+			var zhifu = document.getElementsByClassName('zhifu')[0];
+			zhifu.addEventListener('click',function(e){
+				if(e.target.classList[0]=='zhifu'){
+					zhifu.style.display = 'none';
+				}else{
+					return;
+				}
+			})
+	</script>
+</body>
+</html>

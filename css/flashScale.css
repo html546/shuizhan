@@ -1,0 +1,85 @@
+/*限时抢购*/
+.flashScale{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.flashScale .flashScale_line1{
+	width: 100%;
+	height: 120px;
+	background: #fff;
+}
+.flashScale .flashScale_line1:last-child{
+	margin-bottom: 60px;
+}
+.flashScale .flashScale_line1:not(:last-child){
+	border-bottom: 1px solid #eee;
+}
+.flashScale .flashScale_line1 img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.flashScale .flashScale_line1 h4{
+	float: left;
+	margin-top: 17px;
+	margin-left: 10px;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+.flashScale .flashScale_line1 p:first-of-type{
+	float: right;
+	margin-top: 17px;
+	margin-right: 10px;
+	color: #868686;
+}
+.flashScale .flashScale_line1 p:nth-of-type(2){
+	float: left;
+	margin-left: 9px;
+	margin-top:15px;
+	color: #6f6f6f;
+	font-size: 12px;
+}
+.flashScale .flashScale_line1 p:nth-of-type(2) span{
+	color: #fd6b6c;
+	font-size: 16px;
+}
+.flashScale .flashScale_line1 p:nth-of-type(3){
+	float: right;
+	margin-top: 17px;
+	margin-right:10px;
+}
+.flashScale .flashScale_line1 p:nth-of-type(3).nostart{
+	display: none;
+}
+.flashScale .flashScale_line1 p:nth-of-type(4){
+	color: #9a9a9a;
+	float: left;
+	clear: both;
+	margin-top: -15px;
+	margin-left: 100px;
+	font-size: 10px;
+}
+.flashScale .flashScale_line1 p:nth-of-type(5){
+	float: left;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666;
+}
+.flashScale .flashScale_line1>button{
+	float: right;
+	width: 50px;
+	height: 25px;
+	line-height: 25px;
+	color: #fff;
+	margin-right: 10px;
+	border-radius: 5px;
+	background: #cccccc;
+	border: none;
+}
+.flashScale .flashScale_line1>button.active{
+	background: #fe7676;
+}

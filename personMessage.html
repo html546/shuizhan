@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>个人信息</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="css/personMessage.css">
+	<!-- <link rel="stylesheet" href="css/classic.css">
+	<link rel="stylesheet" href="css/classic.date.css">
+	<link rel="stylesheet" href="css/classic.time.css"> -->
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/timepicker.css">
+	<script src="js/jquery.min.js"></script>
+	<!-- <script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script> -->
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/timepicker.js"></script>
+	<script src="js/jquery.datepair.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>个人中心</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 个人信息title -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>个人信息</span>
+	</div>
+	<!-- 个人信息详情 -->
+	<div class="personMessage">
+		<div class="personMessage_line1" onclick="javascript:window.location.href='bindMobile.html'">
+			<p>绑定手机号:</p>	
+			<img src="images/1-5展开.png" alt="">
+			<p>更换</p> 
+			<p>15805398888</p>
+		</div>
+		<div class="personMessage_line1 personMessage_line2">
+			<p>二维码名片:</p>	
+			<img src="images/3-2二维码.png" alt="">
+		</div>
+		<div class="personMessage_line1">
+			<input type="radio" id="jia" value="jia" name="jiating" checked="checked">
+			<label for="jia" class="checked">家庭</label>
+			<input type="radio" id="gong" value="gong" name="gongsi">
+			<label for="gong">公司</label>
+		</div>
+		<div class="personMessage_line1">
+			<p>生日:</p>	
+			<img src="images/1-5展开.png" alt="">
+			<p id="basic">
+				<input type="text" id="datepicker" value="(生日当月订水享受双倍积分) 请选择">
+			</p>
+		</div>
+		<div class="personMessage_line1">
+			<p>邮箱:</p>	
+			<input class="youxiang" type="text" placeholder="请输入您的邮箱">
+		</div>
+	</div>
+	<!-- 底部按钮及其他 -->
+	<p class="tijiao">场所与生日提交后不可更改</p>
+	<button type="submit">提交</button>
+	<script>
+		$(function(){
+			$('label').click(function(){
+				var radioId = $(this).attr('name');
+				$('label').removeAttr('class')&&$(this).attr('class','checked');
+				$('input[type="radio"]').removeAttr('checked')&&$('#'+radioId).attr('checked', 'checked');
+			});
+			/*$('#datepicker').pickadate({
+				monthsFull:['1','2','3','4','5','6','7','8','9','10','11','12'],
+				format:'yyyy / mmmm / d',
+				today:'今天',
+				clear:'清除',
+				close:'关闭'
+			});*/
+			/*$('#basic #datepicker').datepicker({
+				'format':'m/d/yyyy',
+				'autoclose':true
+			)}*/
+			$('#basic #datepicker').datepicker({
+				'format':'m/d/yyyy',
+				'autoclose':true
+			})
+			$('#basic').datepair();
+		})
+	</script>
+</body>
+</html>

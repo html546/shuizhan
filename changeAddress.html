@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>修改地址</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="css/waterTicket.css">
+	<link rel="stylesheet" href="css/changeAddress.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/distpicker.data.js"></script>
+	<script src="js/distpicker.js"></script>
+</head>
+<body style="background: #fff;">
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 修改地址title1 -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>修改地址</span>
+		<button class="xuzhi" style="border: none;"><a href="">提交</a></button>
+	</div>
+	<!-- 修改地址内容 -->
+	<div class="changeAddress">
+		<form action="">
+			<input type="text" placeholder="请输入联系人姓名">
+			<input type="text" placeholder="联系电话">
+			<input type="radio" id="jia" value="jia" name="jiating" checked="checked">
+			<label for="jia" class="checked">家庭</label>
+			<input type="radio" id="gong" value="gong" name="gongsi">
+			<label for="gong">公司</label>
+			<div id="distpicker">
+				<select>请选择省</select>
+				<select>请选择市</select>
+				<select>请选择区(县)</select>
+			</div>
+			<textarea placeholder="请输入详细地址"></textarea>
+		</form>
+	</div>
+	<!-- 底部 -->
+	<div class="bottom">
+		<div class="img_group">
+			<img src="images/主页灰.png" alt="主页图标">
+			<p>主页</p>
+		</div>
+		<div class="img_group">
+			<img src="images/客服电话灰.png" alt="客服电话">
+			<p>客服电话</p>
+		</div>
+		<div class="img_group">
+			<img src="images/分类灰.png" alt="分类">
+			<p>分类</p>
+		</div>
+		<div class="img_group">
+			<img src="images/购物车灰.png" alt="购物车">
+			<span>2</span>
+			<p>购物车</p>
+		</div>
+		<div class="img_group">
+			<img src="images/个人中心.png" alt="个人中心">
+			<p>个人中心</p>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('label').click(function(){
+				var radioId = $(this).attr('name');
+				$('label').removeAttr('class')&&$(this).attr('class','checked');
+				$('input[type="radio"]').removeAttr('checked')&&$('#'+radioId).attr('checked', 'checked');
+			});
+			$('#distpicker').distpicker({
+				province:'请选择省',
+				city:'请选择市',
+				district:'请选择区(县)',
+				autoSelect:false
+			})
+		})
+	</script>
+</body>
+</html>

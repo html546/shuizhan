@@ -1,0 +1,73 @@
+/*秒杀详情*/
+.seckill{
+	width: 100%;
+	height: auto;
+	background: #fff;
+}
+.seckill .seckill_line1{
+	width: 100%;
+	height: 100px;
+}
+.seckill .seckill_line1:not(:last-child){
+	border-bottom:1px solid #eee;
+}
+.seckill .seckill_line1 img{
+	width: 80px;
+	height: 80px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+.seckill .seckill_line1 h4{
+	float: left;
+	margin-left: 10px;
+	color: #323232;
+	margin-top: 17px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	font-size: 14px;
+}
+.seckill .seckill_line1 p:first-of-type{
+	float: right;
+	color: #343434;
+	margin-right: 10px;
+	margin-top: 20px;
+	font-size: 10px;
+}
+.seckill .seckill_line1 p:first-of-type span{
+	color: #cbcbcb;
+	font-size: 10px;
+}
+.seckill .seckill_line1 p:nth-of-type(2){
+	float: left;
+	color: #666;
+	margin-left: 10px;
+	margin-top: 15px;
+	font-size: 12px;
+}
+.seckill .seckill_line1 p:nth-of-type(2) span{
+	color: #fc6a6a;
+	font-size: 14px;
+}
+.seckill .seckill_line1>span{
+	float: left;
+	font-size: 10px;
+	color: #9a9a9a;
+	margin-left: 100px;
+	margin-top: -18px;
+	clear: left;
+}
+.seckill .seckill_line1 button{
+	width: 50px;
+	height: 25px;
+	background: #fe7676;
+	color: #fff;
+	float: right;
+	margin-right: 10px;
+	margin-top: -25px;
+	border-radius: 2px;
+	border: none;
+}
+.seckill .seckill_line1 button.jieshu{
+	background: #ccc;
+}

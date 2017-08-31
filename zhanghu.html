@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>账户明细</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/zhanghu.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>账户明细</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 账户title -->
+	<div class="title">
+		<img src="images/3-6返回.png" alt="" onclick="javascript:history.back(-1);">
+		<div class="titleGroup">
+			<p class="active">全部</p>
+			<p>支出</p>
+			<p>充值</p>
+		</div>
+	</div>
+	<!-- 账户详情 -->
+	<div class="xiangqing xiangqing1">
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 6张水票</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>充值入账: 6666金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+	</div>
+	<div class="xiangqing xiangqing2">
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 6张水票</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>购水支出: 52金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+	</div>
+	<div class="xiangqing xiangqing3">
+		<div class="xiangqing_line1">
+			<p>订单号: 20170710175822</p>
+			<p>充值入账: 6666金币</p>
+			<p>2017-07-10&nbsp;17:58:22</p>
+			<p>交易金额: 52元</p>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="bottom">
+		<div class="img_group" onclick="javascript:window.location.href='index.html'">
+			<img src="images/主页灰.png" alt="主页图标">
+			<p>主页</p>
+		</div>
+		<div class="img_group">
+			<img src="images/客服电话灰.png" alt="客服电话">
+			<p>客服电话</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='list.html'">
+			<img src="images/分类灰.png" alt="分类">
+			<p>分类</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='shopping(empty).html'">
+			<img src="images/购物车灰.png" alt="购物车">
+			<span>2</span>
+			<p>购物车</p>
+		</div>
+		<div class="img_group">
+			<img src="images/个人中心.png" alt="个人中心">
+			<p>个人中心</p>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.titleGroup p').click(function(event) {
+				var c = $(this).index();
+				if(c === 0){
+					$('.xiangqing1').show().siblings('.xiangqing').hide();
+				}else if(c === 1){
+					$('.xiangqing2').show().siblings('.xiangqing').hide();
+				}else{
+					$('.xiangqing3').show().siblings('.xiangqing').hide();
+				}
+				$(this).addClass('active').siblings('p').removeClass('active');
+			});
+		})
+	</script>
+</body>
+</html>

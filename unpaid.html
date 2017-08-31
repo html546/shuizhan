@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<title>待付款</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="css/unpaid.css">
+	<link rel="stylesheet" href="css/classic.css">
+	<link rel="stylesheet" href="css/classic.date.css">
+	<link rel="stylesheet" href="css/classic.time.css">
+	<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+	<link rel="stylesheet" href="css/timepicker.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="js/picker.js"></script>
+	<script src="js/picker.date.js"></script>
+	<script src="js/picker.time.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/timepicker.js"></script>
+	<script src="js/jquery.datepair.js"></script>
+	<script src="layer_mobile/layer.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站商城</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 购物车title -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>待付款订单</span>
+		<img class="kefu" src="images/1-5客服电话.png" alt="">
+		<div class="xinzeng" onclick="javascript:window.location.href='address.html'">
+			<img src="images/1-5加号.png" alt="">
+			<p>新增收货地址</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="songshui">
+			<p>送水时间</p>
+			<input type="text" id="datepicker" value="2017 / 7 /12">
+			<p id="timeOnly">
+				<input type="text" class="time start" value="7:00am">
+				<input type="text" class="time end" value="7:30am">
+			</p>
+			<input type="text" placeholder="备注留言">
+		</div>
+		<div class="products4">
+			<div class="products4_line1">
+				<img src="images/1-1图图1.png" alt="">
+				<h4>农夫山泉系列10L</h4>
+				<div style="clear: both;"></div>
+				<p><span>￥17.00</span>&nbsp;元/桶&nbsp;×1</p>
+				<p>合计:<span>￥17.00</span></p>
+			</div>
+			<div class="products4_line1">
+				<img src="images/1-1图图2.png" alt="">
+				<h4>哇哈哈系列10L</h4>
+				<div style="clear: both;"></div>
+				<p><span>￥15.00</span>&nbsp;元/桶&nbsp;×2</p>
+				<p>合计:<span>￥30.00</span></p>
+			</div>
+		</div>
+		<div class="products4_content">
+			<div class="products4_content_line1">
+				<span>需支付</span>
+				<p><span>45</span>个金币</p>
+			</div>
+			<div class="products4_content_line1">
+				<span>需水票</span>
+				<p>怡宝水2张，哇哈哈1张</p>
+				<p>(ps:支付金币与水票上一步选择的哪个支付方式，只显示哪一个)</p>
+			</div>
+			<div class="products4_content_line1">
+				<span>温馨提示</span>
+				<p>您累计欠桶: 3个</p>
+			</div>
+		</div>
+	</div>
+	<!-- 底部 -->
+	<button class="bottom">立即支付</button> 
+	<!-- 模态框 -->
+	<!--<div class="mutai">
+		<div>
+			<p>提示</p>
+			<span>您的余额不足，请充值</span>
+			<button>取消</button><button onclick="javascript:window.location.href='recharge.html'">去充值</button>
+		</div>
+	</div>-->
+	<script>
+		$(function(){
+			$('#datepicker').pickadate({
+				monthsFull:['1','2','3','4','5','6','7','8','9','10','11','12'],
+				format:'yyyy / mmmm / d',
+				today:'今天',
+				clear:'清除',
+				close:'关闭'
+			});
+			$('#timeOnly .time').timepicker({
+				'showDuration':true,
+				'timeFormat':'g:ia'
+			})
+			$('#timeOnly').datepair();
+			/*$('.bottom').click(function(event) {
+				$('.mutai').show();
+			});*/
+			/*var mutai = document.querySelector('.mutai');
+			mutai.addEventListener('click',function(e){
+				if(e.target.classList[0]==='mutai'){
+					mutai.style.display ='none';
+				}else{
+					console.log('form');
+				}
+			});
+			$('.mutai div button:first').click(function(event) {
+				$('.mutai').hide();
+			});*/
+			/*$('.bottom').on('click',function(){
+				layer.prompt({
+					title:'请输入支付密码(默认同登录密码)',
+					formType:1
+				},function(pass,index){
+					layer.close(index);
+				})
+			})*/
+			$('.bottom').on('click',function(){
+				layer.open({
+					type:1
+					,title:'请输入支付密码(默认同登录密码)'
+					,content:'<input type="password">'
+					,btn:['确定','取消']
+				});
+			})
+		})
+	</script>
+</body>
+</html>

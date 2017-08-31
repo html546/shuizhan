@@ -1,0 +1,37 @@
+/*桶装水列表*/
+.title img.xiala{
+	position: absolute;
+	right: 10px;
+	top: 10px;
+	margin:0;
+	width: 25px;
+	height: 25px;
+}
+.swiper-container2{
+	background: #fff;
+	color: #b6b6b6;
+	width: 100%;
+	height: 40px;
+	/* position: relative;
+	top: 55px;
+	bottom: 10px; */
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.swiper-container2 .swiper-wrapper .swiper-slide{
+	width:20%;
+	line-height: 40px;
+	padding: 0px 10px;
+	text-align: center;
+}
+.swiper-container2 .swiper-wrapper .swiper-slide a{
+	display: inline-block;
+	padding: 0 10px;
+	width: 100%;
+}
+.swiper-container2 .swiper-wrapper .swiper-slide a.active{
+	color: #21aee6;
+}
+.swiper-container2 .swiper-wrapper .swiper-slide:nth-child(4){
+	width: 27%;
+}

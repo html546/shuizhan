@@ -1,0 +1,62 @@
+/*修改地址内容*/
+.changeAddress input:first-of-type,.changeAddress input:nth-of-type(2){
+	width: 94%;
+	height: 49px;
+	border: 1px solid #ccc;
+	float: left;
+	margin-top: 10px;
+	margin-left: 3%;
+	text-indent: 10px;
+	color: #ababab;
+	font-size: 14px;
+}
+.changeAddress input[type="radio"]{
+	margin: 3px 3px 0px 5px;
+	display: none;
+}
+.changeAddress label{
+	padding-left: 30px;
+	cursor: pointer;
+	background: url(../images/3-2选框.png) no-repeat; 
+	background-size: 27px 25px; 
+	line-height: 50px;
+}
+.changeAddress label.checked{
+	background: url(../images/3-2选择.png) no-repeat;
+	background-size: 27px 25px;
+}
+.changeAddress label:first-of-type{
+	margin-left: 80px;
+}
+.changeAddress label:nth-of-type(2){
+	margin-left: 68px;
+}
+.changeAddress #distpicker{
+	float: left;
+	width: 100%;
+}
+.changeAddress #distpicker select{
+	float: left;
+	width: 94%;
+	height: 49px;
+	border: 1px solid #ccc;
+	margin-left:3%;
+	margin-top: 10px;
+	text-indent: 10px;
+	color: #ababab;
+	font-size: 14px;
+}
+.changeAddress #distpicker select:first-of-type{
+	margin-top: 25px;
+}
+.changeAddress textarea{
+	width: 94%;
+	height: 99px;
+	border: 1px solid #ccc;
+	resize: none;
+	margin-left: 3%;
+	float: left;
+	margin-top: 10px;
+	text-indent: 10px;
+	color: #ababab;
+}

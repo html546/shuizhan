@@ -1,0 +1,83 @@
+.dingdanTitle{
+	width: 100%;
+	height: 30px;
+}
+/*订单标题*/
+.dingdanTitle p:first-child{
+	float: left;
+	margin-left: 10px;
+	line-height: 30px;
+	font-size: 10px;
+}
+.dingdanTitle p:nth-child(2){
+	float: right;
+	margin-right: 10px;
+	line-height: 30px;
+	font-size: 10px;
+}
+/*订单详情*/
+.products4{
+	width: 100%;
+	height: 230px;
+	margin: 0;
+}
+.products4 .products4_line1{
+	width: 100%;
+	height: 100px;
+	border-bottom: 1px solid #eee;
+}
+.products4>p{
+	float: right;
+	line-height: 30px;
+	margin-right: 10px;
+	font-size: 14px;
+	color: #666;
+}
+.products4>p span{
+	color: #fe7774;
+}
+/*个人信息*/
+.personMessage{
+	width: 100%;
+	height: 95px;
+	background: #fff;
+	margin-top: 10px;
+}
+.personMessage p{
+	float: left;
+	margin-left: 10px;
+	font-size: 13px;
+	color: #666666;
+}
+.personMessage p.name{
+	margin-top: 12px;
+}
+.personMessage p.tel{
+	margin-top: 10px;
+	clear: left;
+}
+.personMessage p.address{
+	margin-top: 10px;
+	clear: left;
+}
+/*底部按钮*/
+.queren{
+	width: 355px;
+	height: 45px;
+	background: #59c2e0;
+	color: #fff;
+	border:none;
+	position: absolute;
+	bottom: 10px;
+	left: calc((100% - 355px)/2);
+}
+.pingjia{
+	width: 355px;
+	height: 45px;
+	background: #fea56b;
+	color: #fff;
+	border:none;
+	position: absolute;
+	bottom: 10px;
+	left: calc((100% - 355px)/2);
+}

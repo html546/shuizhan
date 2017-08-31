@@ -1,0 +1,186 @@
+/*标题*/
+.title{
+	height: 40px;
+	width: 100%;
+	background: #59c2e0;
+	color: #fff;
+	position: relative;
+	/*top: 50px; */
+}
+.title a img{
+	top: 10px;
+	left: 8px;
+	position: absolute;
+	width: 20px;
+	height: 20px;
+}
+.title>span{
+	text-align: center;
+    width: 100%;
+    display: inline-block;
+    line-height: 40px;
+}
+/*产品样式*/
+.title .products3{
+	width: 100%;
+	height: 100px;
+	background: #fff;
+	position: relative;
+}
+.title .products3 .icheckbox_minimal-red{
+	position: absolute;
+	top: 41px;
+	left: 10px;
+}
+.title .products3 img{
+	width: 80px;
+	height: 80px;
+	position: absolute;
+	top: 10px;
+	left: 45px;
+}
+.title .products3 .products3_title{
+	position: absolute;
+	left: 135px;
+}
+.title .products3 .products3_title h4{
+	color: #333;
+	padding: 15px 0px 15px 0px;
+	letter-spacing: 1px;
+}
+.title .products3 .products3_title p{
+	color: #999;
+	padding: 14px 0px 14px 0px;
+	font-size: 12px;
+	letter-spacing: 1px;
+}
+.title .products3 .products3_title p span{
+	color: #fd6b6b;
+}
+.title .products3 .jishuqi{
+	position: absolute;
+	top: 65px;
+	right: 10px;
+}
+.title .products3 .jishuqi input[type="number"]{
+	width: 35px;
+	text-align: center;
+	color: #fc6a6a;
+	border: none;
+}
+.title .products3 .jishuqi button{
+	width: 24px;
+	height: 19px;
+	background: #f2f2f2;
+	color: #aaa;
+	border: 1px solid #cdcdcd;
+	line-height: 17px;
+}
+.title .products3:not(:first-child){
+	margin-top: 1px;
+}
+/*压桶样式*/
+.yatong{
+	height: 200px;
+	width: 100%;
+	background: #fff;
+	margin-top: 10px;
+}
+.yatong>.yatong_line1{
+	border-bottom: 1px solid #eee;
+}
+.yatong>.yatong_line1>span,.yatong>.yatong_line1 label{
+	color: #666;
+	line-height: 50px;
+	margin-left: 10px;
+}
+.yatong>.yatong_line1 button{
+	width: 99px;
+	height: 29px;
+	border: 1px solid #999;
+	color: #999;
+}
+.yatong>.yatong_line1 button:first-of-type{
+	margin-left: 10%;
+}
+.yatong>.yatong_line1 button:nth-of-type(2){
+	margin-left: 2px;
+}
+.yatong>.yatong_line1 button.check{
+	border: 1px solid #fea56b;
+	color: #ffa26c;
+	background: url(../images/1-3对号.png) no-repeat right;
+	background-size: 25px 29px; 
+}
+.yatong>.yatong_line1 select#shuliang{
+	float: right;
+	margin-top: 13px;
+	margin-right: 10px;
+}
+.yatong>.yatong_line1 p{
+	float: right;
+	color: #666;
+	line-height: 50px;
+	margin-right: 10px;
+}
+.yatong>.yatong_line1 p span{
+	color: #fe7678;
+}
+/*底部*/
+.bottom2{
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	background: #fff;
+}
+.bottom2 .icheckbox_minimal-red{
+	top: 20px;
+	left: 10px;
+}
+.bottom2 .icheckbox_minimal-red+label{
+	margin-left: 40px;
+	float: left;
+}
+.bottom2 p{
+	margin-left: 40px;
+	display: inline-block;
+	margin-top: -5px;
+}
+.bottom2 p span{
+	color: #fd7774;
+	font-size: 18px;
+}
+.bottom2>span{
+	float: right;
+    height: 50px;
+    color: #fff;
+    background: #fe7676;
+    margin-top: -40px;
+    line-height: 50px;
+    padding: 0px 20px;
+    clear: left;
+}
+/* 购物车(空)样式 */
+.title>img{
+	width: 140px;
+	height: 115px;
+	margin:100px auto 0px;
+}
+.title>p{
+	color: #666;
+	text-align: center;
+	margin-top: 45px;
+}
+.title>button{
+	width: 160px;
+	height: 40px;
+	background: #fea56b;
+	border-radius: 5px;
+	margin-top: 38px;
+	color: #fff;
+	position: relative;
+	left: 50%;
+	margin-left: -80px;
+	border: none;
+}

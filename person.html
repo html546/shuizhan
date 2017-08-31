@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">	
+	<meta charset="UTF-8">
+	<title>个人中心</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/person.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>个人中心</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 头像账号 -->
+	<div class="person" onclick="javascript:window.location.href='personMessage.html'">
+		<div class="personContent">
+			<img src="images/3-1头像.png" alt="">
+			<p>账号:15805398888</p>
+			<a href=""><img src="images/3-1二维码.png" alt=""></a>
+		</div>
+	</div>
+	<!-- 我的订单 -->
+	<div class="dingdan" onclick="javascript:window.location.href='dingdan.html'">
+		<div class="dingdan_title">
+			<img src="images/3-1我的订单.png" alt="">
+			<p>我的订单</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="dingdanIcon">
+			<div class="iconGroup">
+				<img src="images/3-1待收货.png" alt="">
+				<p>待收货</p>
+			</div>
+			<div class="iconGroup">
+				<img src="images/3-1待评价.png" alt="">
+				<p>待评价</p>
+			</div>
+			<div class="iconGroup">
+				<img src="images/3-1已完成.png" alt="">
+				<p>已完成</p>
+			</div>
+		</div>
+	</div>
+	<!-- 订单明细 -->
+	<div class="mingxi">
+		<div class="mingxi_line1" onclick="javascript:window.location.href='recharge.html'">
+			<img src="images/3-1金币.png" alt="">
+			<p>我的金币</p>
+			<button>充值</button>
+			<p>888个</p>
+		</div>
+		<div class="mingxi_line1" onclick="javascript:window.location.href='waterTicket2.html'">
+			<img src="images/3-1我的水票.png" alt="">
+			<p>我的水票</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="mingxi_line1" onclick="javascript:window.location.href='zhanghu.html'">
+			<img src="images/3-1明细.png" alt="">
+			<p>账户明细</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+	</div>
+	<!-- 管理 -->
+	<div class="guanli">
+		<div class="mingxi_line1" onclick="javascript:window.location.href='password.html'">
+			<img src="images/3-1密码.png" alt="">
+			<p>密码管理</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="mingxi_line1" onclick="javascript:window.location.href='address.html'">
+			<img src="images/3-1地址.png" alt="">
+			<p>地址管理</p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+	</div>
+	<!-- 底部 -->
+	<div class="bottom">
+		<div class="img_group" onclick="javascript:window.location.href='index.html'">
+			<img src="images/主页灰.png" alt="主页图标">
+			<p>主页</p>
+		</div>
+		<div class="img_group">
+			<img src="images/客服电话灰.png" alt="客服电话">
+			<p>客服电话</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='list.html'">
+			<img src="images/分类灰.png" alt="分类">
+			<p>分类</p>
+		</div>
+		<div class="img_group" onclick="javascript:window.location.href='shopping(empty).html'">
+			<img src="images/购物车灰.png" alt="购物车">
+			<span>2</span>
+			<p>购物车</p>
+		</div>
+		<div class="img_group">
+			<img src="images/个人中心.png" alt="个人中心">
+			<p>个人中心</p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>今日配送</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/indelivery.css">
+	<link rel="stylesheet" href="layer_mobile/need/layer.css">
+	<script src="js/jquery.min.js"></script>
+	<script src="layer_mobile/layer.js"></script>
+	<script src="js/datePicker.js"></script>
+</head>
+</head>
+<body style="font-size: 16px;">
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>今日配送</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- delivery title -->
+	<div class="deliveryTitle">
+		<p class="active">配送中</p>
+		<p onclick="javascript:window.location.href='indelivery2.html'">已完成</p>
+		<button id="date1">查询</button>
+	</div>
+	<!-- delivery -->
+	<div class="delivery">
+		<div class="delivery_line1">
+			<p>配送单号: 201707121136</p>
+			<p>配送中</p>
+		</div>
+		<div class="delivery_line2">
+			<p>地址: <span>金地中心B座3层</span></p>
+			<p>联系人: <span>张小邪</span></p>
+			<p>联系电话: <span>15805398888 <img src="images/电话.png" alt=""></span></p>
+		</div>
+		<div class="delivery_line3">
+			<p>配送明细</p>
+			<div class="delivery_line3_1">
+				<p>怡宝系列&nbsp;18.9L</p>
+				<p>订单数量: <span>3</span></p>
+				<p>累计欠桶: <span>1</span></p>
+			</div>
+			<div class="delivery_line3_1">
+				<p>哇哈哈系列&nbsp;18.9L</p>
+				<p>订单数量: <span>1</span></p>
+				<p>累计欠桶: <span>0</span></p>
+			</div>
+		</div>
+	</div>
+	<div class="delivery">
+		<div class="delivery_line1">
+			<p>配送单号: 201707121136</p>
+			<p>配送中</p>
+		</div>
+		<div class="delivery_line2">
+			<p>地址: <span>金地中心B座3层</span></p>
+			<p>联系人: <span>张小邪</span></p>
+			<p>联系电话: <span>15805398888 <img src="images/电话.png" alt=""></span></p>
+		</div>
+		<div class="delivery_line3">
+			<p>配送明细</p>
+			<div class="delivery_line3_1">
+				<p>怡宝系列&nbsp;18.9L</p>
+				<p>订单数量: <span>3</span></p>
+				<p>累计欠桶: <span>1</span></p>
+			</div>
+			<div class="delivery_line3_1">
+				<p>哇哈哈系列&nbsp;18.9L</p>
+				<p>订单数量: <span>1</span></p>
+				<p>累计欠桶: <span>0</span></p>
+			</div>
+		</div>
+	</div>
+	<script>
+		$(function(){
+			$('.deliveryTitle p').click(function(event) {
+				$(this).addClass('active').siblings('p').removeClass('active');
+			});
+			$('#date1').click(function(event) {
+				layer.open({
+					title:'查询'
+					,type:0
+					,btn:['确定','取消']
+					,shade:false				,content:'<p>开始日期</p><input id="demo1" type="text" readonly/><p>结束日期</p><input id="demo2" type="text" readonly>'
+					,success:function(elem){
+						var calendar = new datePicker();
+						calendar.init({
+							'trigger':'#demo1',
+							'type':'date',
+							'minDate':'1900-1-1',
+							'maxDate':'2100-12-31',
+							'onSubmit':function(){
+								var theSelectData=calendar.value;
+							},
+							'onClose':function(){}
+						})
+						var calendar2 = new datePicker();
+						calendar2.init({
+							'trigger':'#demo2',
+							'type':'date',
+							'minDate':'1900-1-1',
+							'maxDate':'2100-12-31',
+							'onSubmit':function(){
+								var theSelectData = calendar2.value;
+							},
+							'onClose':function(){
+
+							}
+						})
+					}
+				})
+			});
+			
+		})
+
+	
+	</script>
+</body>
+</html>

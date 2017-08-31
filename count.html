@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta name="viewport" content="width=device-width,height=device-height, user-scalable=no,initial-scale=1, minimum-scale=1, maximum-scale=1,target-densitydpi=device-dpi">
+	<meta charset="UTF-8">
+	<title>今日统计</title>
+	<link rel="stylesheet" href="css/index.css">
+	<link rel="stylesheet" href="css/shoping.css">
+	<link rel="stylesheet" href="css/count.css">
+	<script src="js/jquery.min.js"></script>
+</head>
+<body>
+	<!-- 头部可复用样式 -->
+	<header>
+		<img src="images/guanbi.png" alt="关闭">
+		<p>水站微信端</p>
+		<img src="images/gengduo.png" alt="更多">
+	</header>
+	<!-- 今日统计title1 -->
+	<div class="title">
+		<a href="javascript:history.back(-1);">
+			<img src="images/1-2返回.png" alt="">
+		</a>
+		<span>今日统计</span>
+	</div>
+	<p class="sales">销量</p>
+	<!-- 销量 -->
+	<div class="Sales">
+		<div class="Sales_line1">
+			<p>今日订单量 : <span>150个</span></p>
+			<p>充值金额 : <span>￥1000元</span></p>
+		</div>
+		<div class="Sales_line1" onclick="window.location.href='sale.html'">
+			<p>今日销量&nbsp;&nbsp;&nbsp; : <span>2000个金币+100张水票</span></p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="Sales_line1" onclick="window.location.href='sold.html'">
+			<p>今日售出&nbsp;&nbsp;&nbsp; : <span>200桶</span></p>
+		</div>
+	</div>
+	<!-- 库存 -->
+	<p class="inventory">库存</p>
+	<div class="Inventory">
+		<div class="Invenroty_line1" onclick="javascript:window.location.href='warning.html'">
+			<p>库存预警 : <span>2</span></p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="Invenroty_line1" onclick="javascript:window.location.href='empty%20Barrel.html'">
+			<p>今日空桶 : <span></span></p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+		<div class="Invenroty_line1" onclick="javascript:window.location.href='spread.html'">
+			<p>空桶分布 : <span></span></p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+	</div>
+	<!-- 配送 -->
+	<p class="delivery">配送</p>
+	<div class="Delivery">
+		<div class="Delivery_line1" onclick="javascript:window.location.href='dispatching.html'">
+			<p>今日配送 : <span>50</span></p>
+			<img src="images/1-5展开.png" alt="">
+		</div>
+	</div>
+	<!-- 客户 -->
+	<p class="customer">客户</p>
+	<div class="Customer">
+		<div class="Customer_line1">
+			<p>今日新增 : <span>50</span>个</p>
+		</div>
+		<div class="Customer_line1">
+			<p>今日充值 : <span>11</span>个</p>
+		</div>
+		<div class="Customer_line1">
+			<p>今日电话 : <span>52</span>个</p>
+		</div>
+	</div>
+</body>
+</html>

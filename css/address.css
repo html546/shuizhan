@@ -1,0 +1,68 @@
+/*管理title*/
+.guanliTitle{
+	width: 100%;
+	height: 30px;
+}
+.guanliTitle p{
+	float: left;
+	line-height: 30px;
+	margin-left: 10px;
+	color: #999;
+	font-size: 14px;
+}
+/*管理详情*/
+.guanliContent{
+	width: 100%;
+	height: calc(100% - 120px);
+	background: #fff;
+}
+.guanliContent_line1{
+	width: 100%;
+	height: 125px;
+	border-bottom: 1px solid #eee;
+}
+.guanliContent_line1 p:first-child{
+	float: left;
+	margin-top: 18px;
+	margin-left: 10px;
+}
+.guanliContent_line1 p:nth-child(2){
+	float: left;
+	margin: 10px 10px 0px 10px;
+	font-size: 14px;
+}
+.guanliContent_line1 input[type="radio"]{
+	float: left;
+	margin: 3px 3px 0px 5px;
+    display: none;
+}
+.guanliContent_line1 label{
+	margin-left: 10px;
+	float: left;
+}
+.guanliContent_line1 label{
+	padding-left: 30px;
+    cursor: pointer;
+    margin-top: 10px;
+    background: url(../images/3-10未选框.png) 0% 0% / 27px 23px no-repeat;
+}
+.guanliContent_line1 label.checked{
+	background: url(../images/3-10选框.png) 0% 0% / 27px 23px no-repeat;
+}
+.guanliContent_line1 img:first-of-type,.guanliContent_line1 img:nth-of-type(2){
+	float: right;
+	width: 20px;
+	height: 20px;
+	margin-right: 15px;
+	margin-top: 10px;
+}
+.guanliContent button{
+	width: 94%;
+	height: 45px;
+	background: #59c2e0;
+	color: #fff;
+	margin-left: 3%;
+	border:none;
+	position: absolute;
+	bottom: 20px;
+}
